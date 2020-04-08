@@ -16,14 +16,14 @@ $(document).on("mousemove", function (ev) {
     $(this).css("transform", "rotate(" + angle + "deg)");
   })
 });
-//
-// var count = 0;
-// var images = ["images/brown-eye.svg", "images/green-eye.svg", "images/pink-eye.svg"];
-//
-// setInterval(function () {
-//   count = count + 1;
-//   count = count % images.length;
-//   var image = images[count];
-//   $("img").attr("src", image);
-//
-// }, 2000);
+
+var count = 0;
+var images = ["images/brown-eye.svg", "images/green-eye.svg", "images/pink-eye.svg"];
+
+setInterval(function () {
+  count = count + 1;
+  count = count % images.length;
+  var image = images[count];
+  $("img").attr("src", image);
+
+}, 2000);
